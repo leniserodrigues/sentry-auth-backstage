@@ -7,6 +7,8 @@ from urllib import urlencode
 
 from .constants import USER_DETAILS_ENDPOINT
 
+from .utils import urlsafe_b64decode
+
 
 class FetchUser(AuthView):
     def __init__(self, *args, **kwargs):
@@ -15,7 +17,7 @@ class FetchUser(AuthView):
     def dispatch(self, request, helper):
         access_token = helper.fetch_state('data')['access_token']
 
-        req = safe_urlopen('{0}?{1}'.format(
+        req = safe_urlopen('{0}?{1}&alt=json'.format(
             USER_DETAILS_ENDPOINT,
             urlencode({
                 'access_token': access_token,
