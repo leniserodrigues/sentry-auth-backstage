@@ -7,7 +7,7 @@ from urllib import urlencode
 
 from .constants import USER_DETAILS_ENDPOINT
 
-from .utils import urlsafe_b64decode
+# from .utils import urlsafe_b64decode
 
 
 class FetchUser(AuthView):
