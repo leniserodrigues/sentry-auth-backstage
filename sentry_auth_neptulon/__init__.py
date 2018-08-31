@@ -2,6 +2,6 @@ from __future__ import absolute_import
 
 from sentry.auth import register
 
-from .provider import NeptulonOAuth2Provider
+from .provider import BackstageOAuth2Provider
 
-register('neptulon', NeptulonOAuth2Provider)
+register('backstage', BackstageOAuth2Provider)

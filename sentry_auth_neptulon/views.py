@@ -29,6 +29,6 @@ class FetchUser(AuthView):
         return helper.next_step()
 
 
-class NeptulonConfigureView(ConfigureView):
+class BackstageConfigureView(ConfigureView):
     def dispatch(self, request, organization, auth_provider):
-        return self.render('sentry_auth_neptulon/configure.html')
+        return self.render('sentry_auth_backstage/configure.html')

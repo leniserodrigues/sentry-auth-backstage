@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-sentry-auth-neptulon
+sentry-auth-backstage
 ==================
 
 :copyright: (c) 2015 GetSentry LLC
@@ -17,12 +17,12 @@ install_requires = [
 ]
 
 setup(
-    name='sentry-auth-neptulon',
+    name='sentry-auth-backstage',
     version='0.1.0',
-    author='CMGS',
-    author_email='ilskdw@gmail.com',
-    url='https://www.neptulon.com',
-    description='Neptulon authentication provider for Sentry',
+    author='Backoffice Monitoracao',
+    author_email='backofficeprojetos@gmail.com',
+    url='',
+    description='Backstage Accounts authentication provider for Sentry',
     long_description=__doc__,
     license='',
     packages=find_packages(exclude=['tests']),
@@ -33,7 +33,7 @@ setup(
     include_package_data=True,
     entry_points={
         'sentry.apps': [
-            'auth_neptulon = sentry_auth_neptulon',
+            'auth_backstage = sentry_auth_backstage',
          ],
     },
     classifiers=[
